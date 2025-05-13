@@ -1,5 +1,5 @@
 // API Keys Configuration
-// Replace with your actual API credentials
+// API credentials from Edamam
 
-EDAMAM_APP_ID = 0a7189c7
-EDAMAM_APP_KEY = 9d11e54ebbfc928900f654db1e5f908f 
+EDAMAM_APP_ID =
+EDAMAM_APP_KEY =  
