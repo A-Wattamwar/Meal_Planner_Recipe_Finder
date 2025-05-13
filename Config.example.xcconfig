@@ -1,0 +1,5 @@
+// API Keys Configuration Example
+// Replace with your actual API credentials from Edamam
+
+EDAMAM_APP_ID = your_app_id_here
+EDAMAM_APP_KEY = your_app_key_here 
