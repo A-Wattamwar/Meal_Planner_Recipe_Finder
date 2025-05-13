@@ -112,11 +112,6 @@ EDAMAM_APP_ID = your_app_id_here
 EDAMAM_APP_KEY = your_app_key_here
 ```
 
-4. In Xcode, add the Config.xcconfig file to your project configuration:
-   - Select your project in the Project Navigator
-   - Select your target and go to the "Build Settings" tab
-   - Set "Configuration File" to use your Config.xcconfig file
-
 > **Note**: Never commit your actual API keys to version control. The `Config.xcconfig` file is included in `.gitignore` to prevent accidental exposure of your credentials.
 
 ## Future Enhancements
