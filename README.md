@@ -103,8 +103,9 @@ Meal Planner and Recipe Finder is an intuitive iOS app built with SwiftUI and Sw
 The application uses the Edamam Recipe API for fetching recipe data. For security reasons, API keys are not included in the repository. Follow these steps to set up your own keys:
 
 1. Register for API credentials at [Edamam Developer Portal](https://developer.edamam.com/)
-2. Copy the `Config.example.xcconfig` file to `Config.xcconfig`
-3. Replace the placeholder values in `Config.xcconfig` with your actual API keys:
+2. Create a new file `Config.xconfig`
+3. Copy the `Config.example.xcconfig` file to `Config.xcconfig`
+4. Replace the placeholder values in `Config.xcconfig` with your actual API keys:
 
 ```
 EDAMAM_APP_ID = your_app_id_here
