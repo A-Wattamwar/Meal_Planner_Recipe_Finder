@@ -6,7 +6,9 @@ A sophisticated iOS application for discovering, planning, and saving recipes ba
 
 Meal Planner and Recipe Finder is an intuitive iOS app built with SwiftUI and SwiftData that helps users find recipes, plan meals, discover nearby restaurants, and track their nutritional preferences. The app uses the Edamam Recipe API to provide a vast collection of culinary options tailored to each user.
 
-[![Meal Planner and Recipe Finder Demo](https://img.youtube.com/vi/IUZKEgo9pQE/0.jpg)](https://www.youtube.com/watch?v=IUZKEgo9pQE)
+[![Meal Planner and Recipe Finder Application Demo](https://img.youtube.com/vi/IUZKEgo9pQE/0.jpg)](https://www.youtube.com/watch?v=IUZKEgo9pQE)
+
+[![Meal Planner and Recipe Finder Technical Demo](https://img.youtube.com/vi/IUZKEgo9pQE/0.jpg)](https://www.youtube.com/watch?v=IUZKEgo9pQE)
 
 ## Authors
 
