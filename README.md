@@ -6,7 +6,7 @@ A sophisticated iOS application for discovering, planning, and saving recipes ba
 
 Meal Planner and Recipe Finder is an intuitive iOS app built with SwiftUI and SwiftData that helps users find recipes, plan meals, discover nearby restaurants, and track their nutritional preferences. The app uses the Edamam Recipe API to provide a vast collection of culinary options tailored to each user.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=IUZKEgo9pQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IUZKEgo9pQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Authors
 
@@ -103,7 +103,7 @@ Meal Planner and Recipe Finder is an intuitive iOS app built with SwiftUI and Sw
 The application uses the Edamam Recipe API for fetching recipe data. For security reasons, API keys are not included in the repository. Follow these steps to set up your own keys:
 
 1. Register for API credentials at [Edamam Developer Portal](https://developer.edamam.com/)
-2. Create a new file `Config.xconfig`
+2. Create a new file `Config.xcconfig`
 3. Copy the `Config.example.xcconfig` file to `Config.xcconfig`
 4. Replace the placeholder values in `Config.xcconfig` with your actual API keys:
 
