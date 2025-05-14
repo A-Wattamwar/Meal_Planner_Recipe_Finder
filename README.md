@@ -55,6 +55,8 @@ Meal Planner and Recipe Finder is an intuitive iOS app built with SwiftUI and Sw
 - **MVVM Design Pattern**: Clear separation of views, models, and business logic
 - **Async/Await**: Modern concurrency for smooth user experience
 
+<img width="1063" alt="image" src="https://github.com/user-attachments/assets/e0cca6dc-83c3-4b2d-9856-f75813ee9798" />
+
 ### Application Architecture
 
 #### Models (Data Layer)
