@@ -112,13 +112,9 @@ struct HomeView: View {
 }
  
 #Preview { 
-    // Use placeholder API keys for preview
-    let recipeService = RecipeService(
-        appId: "preview_app_id",
-        appKey: "preview_app_key"
-    )
+    let recipeService = RecipeService()
     let recipesVM = RecipesViewModel(recipeService: recipeService)
     
-    return HomeView(recipesVM: recipesVM)
+    HomeView(recipesVM: recipesVM)
         .modelContainer(for: [Recipe.self, Ingredient.self, NutrientsInfo.self, Nutrient.self], inMemory: true)
 }

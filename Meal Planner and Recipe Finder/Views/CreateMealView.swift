@@ -165,8 +165,8 @@ private extension CreateMealView {
 }
 
 #Preview {
-    let service = RecipeService(appId: "0a7189c7", appKey: "9d11e54ebbfc928900f654db1e5f908f")
-    return CreateMealView(
+    let service = RecipeService()
+    CreateMealView(
         viewModel: CreateMealViewModel(recipeService: service),
         recipesVM: RecipesViewModel(recipeService: service)
     )

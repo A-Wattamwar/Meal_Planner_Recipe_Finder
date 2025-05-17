@@ -157,12 +157,17 @@ struct RecipeDetailView: View {
             }
             
             Section {
-                Link(destination: URL(string: currentRecipe.url)!) {
-                    HStack {
-                        Text("View Original Recipe")
-                        Spacer()
-                        Image(systemName: "arrow.up.right.square")
+                if let url = URL(string: currentRecipe.url) {
+                    Link(destination: url) {
+                        HStack {
+                            Text("View Original Recipe")
+                            Spacer()
+                            Image(systemName: "arrow.up.right.square")
+                        }
                     }
+                } else {
+                    Text("Recipe URL unavailable")
+                        .foregroundStyle(.secondary)
                 }
             }
         }
@@ -186,9 +191,6 @@ struct NutritionRow: View {
 
 #Preview {
     RecipeDetailView(recipe: Recipe.preview, recipesVM: RecipesViewModel(
-        recipeService: RecipeService(
-            appId: "0a7189c7",
-            appKey: "9d11e54ebbfc928900f654db1e5f908f"
-        )
+        recipeService: RecipeService()
     ))
 } 

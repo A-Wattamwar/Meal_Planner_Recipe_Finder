@@ -20,9 +20,5 @@
 	</dict>
 	<key>Scene Configuration</key>
 	<dict/>
-	<key>EDAMAM_APP_ID</key>
-	<string>$(EDAMAM_APP_ID)</string>
-	<key>EDAMAM_APP_KEY</key>
-	<string>$(EDAMAM_APP_KEY)</string>
 </dict>
 </plist>

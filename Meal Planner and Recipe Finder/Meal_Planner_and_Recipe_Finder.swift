@@ -10,8 +10,8 @@ import SwiftData
 
 @main
 struct Meal_Planner_and_Recipe_Finder: App { 
-    // Edamam API credentials from Info.plist
-    private let recipeService: RecipeService
+    // Using RecipeService with credentials from Credentials.swift
+    private let recipeService = RecipeService()
     @StateObject private var recipesVM: RecipesViewModel
     @Environment(\.scenePhase) private var scenePhase
     
@@ -37,18 +37,7 @@ struct Meal_Planner_and_Recipe_Finder: App {
     }()
     
     init() {
-        // Get API keys from Info.plist
-        guard let infoDict = Bundle.main.infoDictionary,
-              let appId = infoDict["EDAMAM_APP_ID"] as? String,
-              let appKey = infoDict["EDAMAM_APP_KEY"] as? String else {
-            fatalError("API credentials not found in Info.plist")
-        }
-        
-        // Initialize the service with keys from config
-        let service = RecipeService(appId: appId, appKey: appKey)
-        self.recipeService = service
-        
-        let viewModel = RecipesViewModel(recipeService: service) 
+        let viewModel = RecipesViewModel(recipeService: recipeService) 
         _recipesVM = StateObject(wrappedValue: viewModel)
     }
     

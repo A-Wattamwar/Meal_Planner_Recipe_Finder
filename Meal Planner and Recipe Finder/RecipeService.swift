@@ -37,8 +37,8 @@ final class RecipeService: ObservableObject {
     @Published var error: RecipeError?
     @Published var searchResults: [APIRecipe] = []
     
-    private let appId: String
-    private let appKey: String
+    private let appId: String = Credentials.edamamAppId
+    private let appKey: String = Credentials.edamamAppKey
     private let baseURL = "https://api.edamam.com/api/recipes/v2"
     
     // Mapping of diet names to Edamam API health/diet values
@@ -54,11 +54,6 @@ final class RecipeService: ObservableObject {
         "High-Fiber": (type: "diet", value: "high-fiber"),
         "Low-Sodium": (type: "diet", value: "low-sodium")
     ]
-    
-    init(appId: String, appKey: String) {
-        self.appId = appId
-        self.appKey = appKey
-    }
     
     func searchRecipes(
         query: String,

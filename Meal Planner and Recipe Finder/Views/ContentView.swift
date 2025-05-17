@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SwiftData 
+import SwiftData
 
 struct ThemeKey: EnvironmentKey {
     static let defaultValue = false
@@ -20,21 +20,21 @@ extension EnvironmentValues {
 }
 
 struct ContentView: View {
-    
+
     let recipeService: RecipeService
-    @ObservedObject var recipesVM: RecipesViewModel 
+    @ObservedObject var recipesVM: RecipesViewModel
     @State private var createMealVM: CreateMealViewModel
     @Environment(\.modelContext) private var modelContext
     @Query private var userProfiles: [UserProfile]
     @State private var showingOnboarding = false
     @State private var isDarkMode = UserDefaults.standard.bool(forKey: "isDarkMode")
-    
+
     init(recipeService: RecipeService, recipesVM: RecipesViewModel) {
         self.recipeService = recipeService
         self.recipesVM = recipesVM
         self._createMealVM = State(initialValue: CreateMealViewModel(recipeService: recipeService))
     }
-    
+
     var body: some View {
         Group {
             if userProfiles.isEmpty {
@@ -326,17 +326,17 @@ struct OnboardingView: View {
 }
 
 #Preview {
-    let recipeService = RecipeService(appId: "0a7189c7", appKey: "9d11e54ebbfc928900f654db1e5f908f")
+    let recipeService = RecipeService()
     let recipesVM = RecipesViewModel(recipeService: recipeService)
-    return ContentView(recipeService: recipeService, recipesVM: recipesVM)
+    ContentView(recipeService: recipeService, recipesVM: recipesVM)
         .modelContainer(
             for: [
-        Recipe.self,
-        Ingredient.self,
-        NutrientsInfo.self,
-        Nutrient.self,
-        Restaurant.self,
-        UserProfile.self
+                Recipe.self,
+                Ingredient.self,
+                NutrientsInfo.self,
+                Nutrient.self,
+                Restaurant.self,
+                UserProfile.self
             ],
             inMemory: true
         )
