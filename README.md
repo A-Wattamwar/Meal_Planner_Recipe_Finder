@@ -8,11 +8,11 @@ Meal Planner and Recipe Finder is an intuitive iOS app built with SwiftUI and Sw
 
 Watch application's demo here:
 
-[![Meal Planner and Recipe Finder Application Demo](https://img.youtube.com/watch?v=0GHrAu3Xnik/0.jpg)](https://www.youtube.com/watch?v=0GHrAu3Xnik)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/0GHrAu3Xnik/0.jpg)](https://www.youtube.com/watch?v=0GHrAu3Xnik)
 
 Watch application's technical demo here:
 
-[![Meal Planner and Recipe Finder Technical Demo](https://img.youtube.com/vi/IUZKEgo9pQE/0.jpg)](https://www.youtube.com/watch?v=IUZKEgo9pQE)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IUZKEgo9pQE/0.jpg)](https://www.youtube.com/watch?v=IUZKEgo9pQE)
 
 ## Authors
 
